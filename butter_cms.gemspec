@@ -11,4 +11,7 @@ Gem::Specification.new do |s|
   s.homepage = 'http://github.com/hackvan/butter_cms'
   s.license  = 'MIT'
   s.version  = ButterCMS::Version
+  s.files    = Dir['spec/helper.rb', 'lib/**/*.rb']
+  s.add_development_dependency "rspec", "~> 3.7", ">= 3.7.0"
+  s.add_runtime_dependency 'rest-client', '~> 2.0'
 end
